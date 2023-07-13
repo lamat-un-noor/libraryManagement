@@ -1,12 +1,12 @@
 package com.library.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-@RequestMapping("/book")
+@Controller
 public class BookController {
 
-    @GetMapping("/get")
+    @GetMapping("/")
     public String getHome(){
         return "home";
     }
